@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git-cz"
   },
   "dependencies": {
@@ -14,12 +15,11 @@
     "commitizen": "2.9.5",
     "cz-conventional-changelog": "1.2.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Felipe Blini <felipe@blini.io> (http://blini.io/)",
   "license": "MIT",
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
