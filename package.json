@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "commit": "git-cz"
+  },
   "dependencies": {
     "express": "4.14.0",
     "socket.io": "1.7.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "commitizen": "2.9.5",
+    "cz-conventional-changelog": "1.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Felipe Blini <felipe@blini.io> (http://blini.io/)",
-  "license": "MIT"
+  "license": "MIT",
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
 }
