@@ -17,12 +17,13 @@ const path = require('path');
 // definindo a pasta public como o local onde o front-end reside
 app.use(express.static(path.join(__dirname, "public")));
 
-// ouvindo o evento 'connection' no servidor e criando um novo
-// socket para cada nova conexão
+// ouvindo o evento 'connection' no servidor que quando executado, cria um novo
+// socket para a conexção recém aberta
 io.on("connection", socket => {
-    console.log('user connected');
+    // com o novo socket criado é ciado também um novo ouvinte
+    // para o nosso evento
     socket.on("mensagem_mano", msg => {
-        console.log('enviando msg', msg);
+        // e o Socket.io reenvia pra todos que estão conectados
         io.emit("mensagem_mano", msg);
     });
 });
