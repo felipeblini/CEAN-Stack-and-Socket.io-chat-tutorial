@@ -14,8 +14,8 @@ const io = require("socket.io").listen(server);
 // importando o módulo path do node
 const path = require('path');
 
-// definindo a pasta public como o local onde o front-end reside
-app.use(express.static(path.join(__dirname, "public")));
+// definindo a pasta public/dist como o local onde o front-end reside
+app.use(express.static(path.join(__dirname, "public", "dist")));
 
 // ouvindo o evento 'connection' no servidor que quando executado, cria um novo
 // socket para a conexção recém aberta
