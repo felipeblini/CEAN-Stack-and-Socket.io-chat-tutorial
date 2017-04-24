@@ -22,18 +22,12 @@ Inside the `public` folder, run:
 
     $ ng build -p
 
-It should create the `dist` folder.
+It should create the `dist` folder. Then:
 
 #### Run Application
 
-Go back to the main folder and run:
+Go back to the root folder and run:
 
     $ node app
 
 Open `htp://localhost:3000`.
-
-## Run in Development Mode
-
-If you want to run the app, make changes and see it in the browser.
-
-???
